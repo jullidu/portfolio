@@ -15,8 +15,16 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <main>
+    <div class="wrapper">
+      <header>
+        <div class="hello">
+          <h1 class="hello-title">
+            Добро пожаловать, меня зовут <span class="hello-name">Юля&nbsp;Михайлова</span><br>
+            я занимаюсь версткой сайтов.
+          </h1>
+        </div>
+      </header>
       <nav class="navbar navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +42,7 @@
               <a class="nav-link" href="#"> Навыки</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Портфолио</a>
+              <a class="nav-link" href="#">Проекты</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Контакты</a>
@@ -42,88 +50,135 @@
           </ul>
         </div>
       </nav>
-      <div class="hello">
-        <h1 class="hello-title">
-          Добро пожаловать, меня зовут <span class="hello-name">Юля&nbsp;Михайлова</span><br>
-          я занимаюсь версткой сайтов.
-        </h1>
+      <section class="about-me">
+        <h2 class="section-title">Обо мне</h2>
 
+        <div class="about-box">
+
+          <div class="about-img-box">
+            <img class="about-img" src="images/about-me-img.png" alt="about-me-img">
+          </div>
+          <div class="about-desc">
+
+            <p>Если вам нужен надежный и красивый сайт, помогу в осуществлении задуманного и сверстаю его по макету
+              Photoshop!</p>
+            <p>Я люблю развиваться, поэтому изучаю JavaScript, и в скором времени стану полноценным
+              Frontend-разработчиком.
+            </p>
+
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="section-title">Навыки</h2>
+        <div class="skills-box">
+          <div class="skills-desc">
+            <h4 class="skills-desc-title">Что я использую в работе:</h4>
+            <ul class="skills-desc-list">
+              <li class="skills-desc-item">семантические элементы;</li>
+              <li class="skills-desc-item">методологию БЭМ;</li>
+              <li class="skills-desc-item">препроцессор SASS;</li>
+              <!-- <li class="skills-desc-item">Bootstrap;</li> -->
+              <li class="skills-desc-item">Flexbox & CSS Grid;</li>
+              <!-- <li class="skills-desc-item">Photoshop & Avocode;</li> -->
+              <!-- <li class="skills-desc-item">GitHub;</li> -->
+              <li class="skills-desc-item">кроссбраузерность;</li>
+              <li class="skills-desc-item">адаптивность <i class="skills-icons fas fa-laptop fa-lg"></i><i
+                  class="skills-icons fas fa-tablet-alt fa-lg"></i><i class="skills-icons fas fa-mobile-alt fa-lg"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-progress">
+            <span class="skill-label">HTML5</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 91%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">91%</div>
+            </div>
+            <span class="skill-label">CSS3</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+            <span class="skill-label">JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">45%</div>
+            </div>
+            <span class="skill-label">Git</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 63%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">63%</div>
+            </div>
+            <span class="skill-label">Bootstrap</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <span class="skill-label">Photoshop</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 55%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">55%</div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+  </main>
+  <section class="projects">
+    <h2 class="section-title">Проекты</h2>
+    <article class="project-item">
+      <div class="project-desc">
+        <h3 class="project-item-title"><a class="project-title-link" href="https://jullidu.github.io/taxi-cab-project/"
+            target="_blank">Сайт Taxi
+            Cab</a></h3>
+        <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан на CSS Grid.</p>
       </div>
-    </header>
-    <section class="about-me">
-      <h2 class="section-title">Обо мне</h2>
-
-      <div class="about-box">
-
-        <div class="about-img-box">
-          <img class="about-img" src="images/about-me-img.png" alt="about-me-img">
-        </div>
-        <div class="about-desc">
-
-          <p>Если вам нужен надежный и красивый сайт, помогу в осуществлении задуманного и сверстаю его по макету
-            Photoshop!</p>
-          <p>Я люблю развиваться, поэтому изучаю JavaScript, и в скором времени стану полноценным
-            Frontend-разработчиком.
-          </p>
-
-        </div>
+      <div class="project-img-box">
+        <a href="https://jullidu.github.io/taxi-cab-project/" target="_blank"><img class="project-img"
+            src="images/taxi-proj.png" alt="taxi-proj-img"></a>
       </div>
-    </section>
-    <section class="skills">
-      <h2 class="section-title">Навыки</h2>
-      <div class="skills-box">
-        <div class="skills-desc">
-          <h4 class="skills-desc-title">Что я использую в работе:</h4>
-          <ul class="skills-desc-list">
-            <li class="skills-desc-item">семантические элементы;</li>
-            <li class="skills-desc-item">методологию БЭМ;</li>
-            <li class="skills-desc-item">препроцессор SASS;</li>
-            <!-- <li class="skills-desc-item">Bootstrap;</li> -->
-            <li class="skills-desc-item">Flexbox & CSS Grid;</li>
-            <!-- <li class="skills-desc-item">Photoshop & Avocode;</li> -->
-            <!-- <li class="skills-desc-item">GitHub;</li> -->
-            <li class="skills-desc-item">кроссбраузерность;</li>
-            <li class="skills-desc-item">адаптивность <i class="skills-icons fas fa-laptop fa-lg"></i><i
-                class="skills-icons fas fa-tablet-alt fa-lg"></i><i class="skills-icons fas fa-mobile-alt fa-lg"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="skills-progress">
-          <span class="skill-label">HTML5</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 91%"
-              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">91%</div>
-          </div>
-          <span class="skill-label">CSS3</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%"
-              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-          <span class="skill-label">JavaScript</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%"
-              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">45%</div>
-          </div>
-          <span class="skill-label">Git</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 63%"
-              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">63%</div>
-          </div>
-          <span class="skill-label">Bootstrap</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%"
-              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">75%</div>
-          </div>
-          <span class="skill-label">Photoshop</span>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 55%"
-              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">55%</div>
-          </div>
-        </div>
-
+    </article>
+    <article class="project-item">
+      <div class="project-desc">
+        <h3 class="project-item-title"><a class="project-title-link" href="https://bouncy-project.firebaseapp.com/"
+            target="_blank">Сайт
+            Bouncy</a></h3>
+        <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан по методологии
+          БЭМ, с использованием Bootstrap, JavaScript, SCSS, семантических элементов .</p>
       </div>
+      <div class="project-img-box">
+        <a href="https://bouncy-project.firebaseapp.com/" target="_blank"><img class="project-img"
+            src="images/bouncy-proj.png" alt="bouncy-proj-img"></a>
+      </div>
+    </article>
+  </section>
+  <section class="contacts">
+    <h2 class="section-title contacts-title">Контакты</h2>
+    <div class="contact-box">
+      <div class="contact-item email">
+        <a class="contact-link" href="#">Написать мне на почту:<br>
+          <i class="fas fa-envelope fa-3x"></i>
+        </a>
+      </div>
+      <div class="contact-item telegram">
+        <a class="contact-link" href="">Написать мне в Telegram:<br>
+          <i class="fab fa-telegram-plane fa-3x"></i>
+        </a>
+      </div>
+      <div class="contact-item github">
+        <a class="contact-link" href="">Моя страница на GitHub:<br>
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </div>
+    </div>
 
-    </section>
+
+
+  </section>
+  <footer>
+
+  </footer>
 
   </div>
 

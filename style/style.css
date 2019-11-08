@@ -27,8 +27,9 @@ header {
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(224, 221, 221, 0.5);
   z-index: 1;
 }
 
@@ -41,10 +42,9 @@ header {
 .hello {
   display: inline-block;
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   left: 0;
   right: 0;
+  margin: 0 auto;
   margin-top: 150px;
   text-align: center;
 
@@ -195,4 +195,103 @@ header {
   .skills-box {
     grid-template-columns: 1fr;
   }
+}
+
+/* styles for projects section */
+
+.projects {
+  min-height: 600px;
+  padding: 30px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+  padding: 0 50px;
+  min-height: 300px;
+  grid-column-gap: 30px;
+
+}
+
+.project-title-link {
+  color: #0e2a3c;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.project-item-desc {
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.project-img-box {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* media query for projects section */
+
+@media (max-width: 992px) {
+  .project-item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* styles for contacts section */
+
+.contacts {
+  min-height: 300px;
+  padding-top: 110px;
+  background: linear-gradient(to right, #2ebf91, #37c2db);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.contacts-title {
+  margin-left: 30px;
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
+}
+
+.contact-item {
+  height: 100%;
+}
+
+.contact-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.github {
+  background-color: #24292e;
+
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+
+.email {
+  background-color: #d44e41;
 }

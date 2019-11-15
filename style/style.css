@@ -18,11 +18,13 @@ body {
 /* styles for header */
 
 header {
-  min-height: 450px;
+  min-height: 350px;
   background: linear-gradient(to right, #2ebf91, #37c2db);
-  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {
@@ -40,14 +42,7 @@ header {
 
 
 .hello {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  margin-top: 150px;
   text-align: center;
-
 }
 
 .hello-title {
@@ -70,10 +65,6 @@ header {
 }
 
 @media (max-width: 576px) {
-  .hello {
-    margin-top: 100px;
-  }
-
   header {
     margin-bottom: 0;
   }
@@ -253,16 +244,36 @@ header {
 /* styles for contacts section */
 
 .contacts {
-  min-height: 300px;
-  padding-top: 110px;
+  min-height: 250px;
   background: linear-gradient(to right, #2ebf91, #37c2db);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 100px;
 }
 
-.contacts-title {
-  margin-left: 30px;
+.contacts-angle {
+  text-align: center;
+}
+
+.angle-link {
+  color: #0e2a3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: #0e2a3c solid 2px;
+  border-radius: 15px;
+  transition: all .3s ease-in-out;
+}
+
+.angle-link:hover {
+  transition: all .3s ease-in-out;
+  transform: translateY(-10px);
+  text-decoration: none;
+  color: #0e2a3c;
 }
 
 .contact-box {
@@ -281,17 +292,83 @@ header {
   height: 100%;
   width: 100%;
   color: #fff;
+  padding: 10px;
+}
+
+.contact-link:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .github {
+  background-color: rgba(14, 42, 60, 0.5);
+  transition: all 0.7s ease;
+}
+
+.github:hover {
   background-color: #24292e;
+  transition: all 0.7s ease;
 
 }
 
 .telegram {
+  background-color: rgba(14, 42, 60, 0.6);
+  transition: all 0.7s ease;
+}
+
+.telegram:hover {
   background-color: #0088cc;
+  transition: all 0.7s ease;
 }
 
 .email {
+  background-color: rgba(14, 42, 60, 0.8);
+  transition: all 0.7s ease;
+}
+
+.email:hover {
   background-color: #d44e41;
+  transition: all 0.7s ease;
+}
+
+.contact-icon {
+  margin-top: 5px;
+}
+
+/* media query for projects section */
+
+@media (max-width: 650px) {
+  .contacts {
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts {
+    min-height: 400px;
+  }
+}
+
+
+/* styles for footer section */
+
+footer {
+  background-color: #0e2a3c;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #ccc9c9;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.footer-sign {
+  color: #20b787;
+  font-weight: bold;
 }

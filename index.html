@@ -17,7 +17,7 @@
 <body>
   <main>
     <div class="wrapper">
-      <header>
+      <header id="header">
         <div class="hello">
           <h1 class="hello-title">
             Добро пожаловать, меня зовут <span class="hello-name">Юля&nbsp;Михайлова</span><br>
@@ -25,7 +25,7 @@
           </h1>
         </div>
       </header>
-      <nav class="navbar navbar-light">
+      <!-- <nav class="navbar navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
       <section class="about-me">
         <h2 class="section-title">Обо мне</h2>
 
@@ -154,43 +154,34 @@
     </article>
   </section>
   <section class="contacts">
-    <h2 class="section-title contacts-title">Контакты</h2>
+    <div class="contacts-angle">
+      <a href="#header" class="angle-link"><i class="fas fa-angle-up fa-2x"></i></a>
+    </div>
     <div class="contact-box">
       <div class="contact-item email">
         <a class="contact-link" href="#">Написать мне на почту:<br>
-          <i class="fas fa-envelope fa-3x"></i>
+          <i class="fas fa-envelope fa-2x contact-icon"></i>
         </a>
       </div>
       <div class="contact-item telegram">
-        <a class="contact-link" href="">Написать мне в Telegram:<br>
-          <i class="fab fa-telegram-plane fa-3x"></i>
+        <a class="contact-link" href="https://t.me/jullidu" target="_blank">Написать мне в Telegram:<br>
+          <i class="fab fa-telegram-plane fa-2x contact-icon"></i>
         </a>
       </div>
       <div class="contact-item github">
-        <a class="contact-link" href="">Моя страница на GitHub:<br>
-          <i class="fab fa-github fa-3x"></i>
+        <a class="contact-link" href="https://github.com/jullidu" target="_blank">Моя страница на GitHub:<br>
+          <i class="fab fa-github fa-2x contact-icon"></i>
         </a>
       </div>
     </div>
-
-
-
   </section>
   <footer>
-
+    <p class="footer-text">Copyright &#169; 2019 <span class="footer-sign">Created by jullidu</span> </p>
   </footer>
 
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>

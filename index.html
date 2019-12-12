@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <main>
-    <div class="wrapper">
+  <div class="wrapper">
+    <main>
       <header id="header">
         <div class="hello">
           <h1 class="hello-title">
@@ -100,6 +100,11 @@
             </div>
             <span class="skill-label">JavaScript</span>
             <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 65%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+            <span class="skill-label">Node.js</span>
+            <div class="progress">
               <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%"
                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">45%</div>
             </div>
@@ -123,60 +128,103 @@
         </div>
 
       </section>
-  </main>
-  <section class="projects">
-    <h2 class="section-title">Проекты</h2>
-    <article class="project-item">
-        <div class="project-img-box">
+
+      <section class="projects">
+        <h2 class="section-title">Проекты</h2>
+        <div class="project-item">
+          <div class="project-img-box">
             <a href="https://jullidu.github.io/taxi-cab-project/" target="_blank"><img class="project-img"
                 src="images/taxi-proj.png" alt="taxi-proj-img"></a>
           </div>
-      <div class="project-desc">
-        <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан на CSS Grid.</p>
-        <a href="https://github.com/jullidu/taxi-cab-project" target="_blank" class="open-github">GitHub репозиторий</a><br>
-        <a href="https://jullidu.github.io/taxi-cab-project/" target="_blank" class="open-live">Смотреть live-версию</a>
-      </div>
-    </article>
-    <article class="project-item">
-        <div class="project-img-box">
-            <a href="https://bouncy-project.firebaseapp.com/" target="_blank"><img class="project-img"
-                src="images/bouncy-proj.png" alt="bouncy-proj-img"></a>
+          <div class="project-desc">
+            <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан на CSS Grid.</p>
+
+            <a href="https://github.com/jullidu/taxi-cab-project" target="_blank" class="open-github">GitHub
+              репозиторий</a><br>
+            <a href="https://jullidu.github.io/taxi-cab-project/" target="_blank" class="open-live">Смотреть
+              live-версию</a>
           </div>
-      <div class="project-desc">
-        <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан по методологии
-          БЭМ, с использованием Bootstrap, JavaScript, SCSS, семантических элементов.</p>
-          <a href="https://github.com/jullidu/bouncy-template" target="_blank" class="open-github">GitHub репозиторий</a><br>
-          <a href="https://bouncy-project.firebaseapp.com/" target="_blank" class="open-live">Смотреть live-версию</a>
+        </div>
+        <div class="project-item">
+          <div class="project-img-box">
+            <a href="https://bouncy-project.firebaseapp.com/" target="_blank">
+              <img class="project-img" src="images/bouncy-proj.png" alt="bouncy-proj-img">
+            </a>
+          </div>
+          <div class="project-desc">
+            <p class="project-item-desc">Одностраничный адаптивный сайт. <br> Сверстан по методологии
+              БЭМ, с использованием Bootstrap, JavaScript, SCSS, семантических элементов.</p>
+            <a href="https://github.com/jullidu/bouncy-template" target="_blank" class="open-github">GitHub
+              репозиторий</a><br>
+            <a href="https://bouncy-project.firebaseapp.com/" target="_blank" class="open-live">Смотреть live-версию</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img-box">
+            <a href="https://jullidu-smart-brain.herokuapp.com/?#" target="_blank"><img class="project-img"
+                src="images/smart-brain-proj.png" alt="smart-brain-proj"></a>
+          </div>
+          <div class="project-desc">
+
+            <div>
+              <p class="project-item-desc">Приложение, распознающее лицо по ссылке на изображение.</p>
+              <p class="project-item-desc">
+                Доступные функции:<br>
+                - возможность зарегистрироваться и заходить под сохраненным логином и паролем;<br>
+                - счетчик количества ссылок, введенных пользователем.
+              </p>
+              <p class="project-item-desc">Написано на JavaScript, с использованием React.js, размещено на платформе
+                Heroku.</p>
+              <hr>
+              <p class="footnote">
+                <!-- <i class="fas fa-star-of-life fa-xs"></i> -->
+                финальный проект курса на платформе Udemy -
+                <a class="footnote-link" href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/"
+                  target="_blank">The
+                  Complete Web Developer in 2020: Zero to Mastery</a>
+              </p>
+
+            </div>
+
+
+            <a href="https://github.com/jullidu/smart-brains" target="_blank" class="open-github">GitHub репозиторий
+              (frontend)</a><br>
+            <a href="https://github.com/jullidu/smart-brain-api" target="_blank" class="open-github">GitHub репозиторий
+              (backend)</a><br>
+            <a href="https://jullidu-smart-brain.herokuapp.com/?#" target="_blank" class="open-live">Смотреть
+              live-версию</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="contacts">
+      <div class="contacts-angle">
+        <a href="#header" class="angle-link"><i class="fas fa-angle-up fa-2x"></i></a>
       </div>
-      
-    </article>
-  </section>
-  <section class="contacts">
-    <div class="contacts-angle">
-      <a href="#header" class="angle-link"><i class="fas fa-angle-up fa-2x"></i></a>
-    </div>
-    <div class="contact-box">
-      <div class="contact-item email">
-        <a class="contact-link" href="#">Написать мне на почту:<br>
-          <i class="fas fa-envelope fa-2x contact-icon"></i>
-        </a>
+      <div class="contact-box">
+        <div class="contact-item email">
+          <a class="contact-link" href="#">Написать мне на почту:<br>
+            <i class="fas fa-envelope fa-2x contact-icon"></i>
+          </a>
+        </div>
+        <div class="contact-item telegram">
+          <a class="contact-link" href="https://t.me/jullidu" target="_blank">Написать мне в Telegram:<br>
+            <i class="fab fa-telegram-plane fa-2x contact-icon"></i>
+          </a>
+        </div>
+        <div class="contact-item github">
+          <a class="contact-link" href="https://github.com/jullidu" target="_blank">Моя страница на GitHub:<br>
+            <i class="fab fa-github fa-2x contact-icon"></i>
+          </a>
+        </div>
       </div>
-      <div class="contact-item telegram">
-        <a class="contact-link" href="https://t.me/jullidu" target="_blank">Написать мне в Telegram:<br>
-          <i class="fab fa-telegram-plane fa-2x contact-icon"></i>
-        </a>
-      </div>
-      <div class="contact-item github">
-        <a class="contact-link" href="https://github.com/jullidu" target="_blank">Моя страница на GitHub:<br>
-          <i class="fab fa-github fa-2x contact-icon"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p class="footer-text">Copyright &#169; 2019 <a href="https://github.com/jullidu" target="_blank" class="footer-sign">Created by jullidu</a></p>
-    
-  </footer>
+    </section>
+    <footer>
+      <p class="footer-text">Copyright &#169; 2019 <a href="https://github.com/jullidu" target="_blank"
+          class="footer-sign">Created by jullidu</a></p>
+
+    </footer>
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

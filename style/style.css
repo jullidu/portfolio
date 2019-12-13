@@ -107,7 +107,6 @@ header {
   text-align: justify;
   font-size: 1.1rem;
   font-style: italic;
-  padding: 0 50px;
 }
 
 /* media query for about me section */
@@ -122,10 +121,6 @@ header {
   .about-box {
     grid-template-columns: 1fr;
   }
-
-  .about-desc {
-    padding: 0;
-  }
 }
 
 /* styles for skill section */
@@ -139,10 +134,6 @@ header {
 .skills-box {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-}
-
-.skills-desc {
-  justify-self: center;
 }
 
 .skills-desc-title {

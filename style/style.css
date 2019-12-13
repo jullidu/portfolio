@@ -20,23 +20,9 @@ header {
   min-height: 300px;
   background: linear-gradient(to right, #2ebf91, #37c2db);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(224, 221, 221, 0.5);
-  z-index: 1;
-}
-
-.navbar-nav {
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 .hello {
@@ -48,7 +34,6 @@ header {
   font-size: 2rem;
   color: #0e2a3c;
   font-weight: bold;
-
 }
 
 .hello-name {
@@ -64,131 +49,19 @@ header {
   }
 }
 
-@media (max-width: 576px) {
-  header {
-    margin-bottom: 0;
-  }
-}
-
 @media (max-width: 400px) {
   .hello-title {
     font-size: 1.8rem;
   }
 }
 
-/* styles for section about me */
 
-.about-me {
-  min-height: 400px;
-  background-color: #fff;
-  padding: 30px;
-}
-
-.section-title {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #0e2a3c;
-  letter-spacing: -1px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-.about-box {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-}
-
-.about-img {
-  width: 100%;
-  height: 100%;
-}
-
-.about-desc {
-  text-align: justify;
-  font-size: 1.1rem;
-  font-style: italic;
-}
-
-/* media query for about me section */
-
-@media (max-width: 992px) {
-  .about-desc {
-    padding: 0 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-box {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* styles for skill section */
-
-.skills {
-  min-height: 400px;
-  background: linear-gradient(to right, #ecf4fb, #37c2db73);
-  padding: 30px;
-}
-
-.skills-box {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-}
-
-.skills-desc-title {
-  font-weight: bold;
-}
-
-.skills-desc-item {
-  list-style-position: inside;
-  list-style-type: square;
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-bottom: 5px;
-}
-
-.skills-icons {
-  color: #132d3e;
-}
-
-.skills-icons:not(:last-child) {
-  margin-right: 10px;
-}
-
-.skill-label {
-  font-weight: bold;
-}
-
-.progress {
-  margin-bottom: 15px;
-}
-
-/* media query for skills section */
-
-@media (max-width: 992px) {
-  .skills-box {
-    grid-column-gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-box {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .skills-box {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* styles for projects section */
 
 .projects {
   min-height: 600px;
-  padding: 30px;
+  padding: 50px 30px;
 }
 
 .project-item {
@@ -196,7 +69,7 @@ header {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 50px;
   min-height: 300px;
-  grid-column-gap: 50px;
+  grid-column-gap: 30px;
 }
 
 .project-item-desc {
@@ -298,8 +171,113 @@ hr {
   .project-item {
     grid-template-columns: 1fr;
   }
+}
+
+/* styles for skill section */
+
+.skills {
+  min-height: 400px;
+  background: linear-gradient(to right, #83c7b2, #37c2db73);
+  padding: 50px 30px;
+}
+
+.skills-box {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+}
+
+.skills-desc {
+  background-color: #ffffff4a;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.51), 0 3px 6px rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px 40px;
+
+}
+
+.skills-desc-title {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.skills-desc-list {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.skills-desc-item {
+  list-style-position: inside;
+  list-style-type: none;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
 
 
+/* media query for skills section */
+
+@media (max-width: 768px) {
+  .skills-box {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .skills-desc {
+    padding: 20px;
+  }
+}
+
+
+/* styles for section about me */
+
+.about-me {
+  min-height: 400px;
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0e2a3c;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-desc {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+
+/* media query for about me section */
+
+@media (max-width: 992px) {
+  .about-desc {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-box {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* styles for contacts section */

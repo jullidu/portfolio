@@ -236,7 +236,7 @@ hr {
 
 .about-me {
   min-height: 400px;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 50px 30px;
 }
 

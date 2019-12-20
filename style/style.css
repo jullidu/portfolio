@@ -241,12 +241,16 @@ hr {
   height: 100%;
 }
 
-.about-desc>p {
+.about-desc p {
   text-align: justify;
   font-size: 1.1rem;
   font-style: italic;
   margin-bottom: 10px;
   line-height: 25px;
+}
+
+.about-desc {
+  padding: 0 10px;
 }
 
 

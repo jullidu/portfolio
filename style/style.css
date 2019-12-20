@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* styles for header */
 
 header {
@@ -102,6 +106,7 @@ header {
   font-style: italic;
   font-size: 1rem;
   margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .project-img-box {
@@ -236,10 +241,12 @@ hr {
   height: 100%;
 }
 
-.about-desc {
+.about-desc>p {
   text-align: justify;
   font-size: 1.1rem;
   font-style: italic;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
 
 
@@ -271,7 +278,7 @@ hr {
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .scroll-angle {
@@ -383,6 +390,7 @@ hr {
 
   .contacts {
     min-height: 400px;
+    padding-top: 100px;
   }
 }
 

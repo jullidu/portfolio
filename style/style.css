@@ -184,6 +184,10 @@ header {
   text-decoration: underline;
 }
 
+.footnote-link:hover {
+  color: blue;
+}
+
 hr {
   margin-bottom: 5px;
 }

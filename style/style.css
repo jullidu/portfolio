@@ -23,6 +23,7 @@ a {
 header {
   min-height: 250px;
   background: linear-gradient(to right, #2ebf91, #37c2db);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   display: flex;
   align-items: center;
@@ -283,6 +284,7 @@ hr {
 .contacts {
   min-height: 250px;
   background: linear-gradient(to right, #2ebf91, #37c2db);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   display: grid;
   grid-template-rows: 1fr 1fr;

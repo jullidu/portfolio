@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='sr load-hidden'>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="https://kit.fontawesome.com/37babfd013.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
-  <link rel="icon" type="image" href="images/icon-title.png" />
   <title>Юля Михайлова Frontend-разработчик</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 </head>
 
 <body>
   <div class="wrapper">
     <main>
       <header id="header">
-        <div class="hello">
+        <div class="hello load-hidden">
           <h1 class="hello-title">
             <span class="hello-name">Юля&nbsp;Михайлова</span><br>
-            <span class="hello-frontend">Frontend - разработчик</span>
+            <span class="hello-frontend load-hidden">Frontend - разработчик</span>
           </h1>
         </div>
       </header>
 
       <section class="projects">
-        <h2 class="section-title">Проекты</h2>
+        <h2 class="section-title load-hidden">Проекты</h2>
         <div class="projects-wrapper">
-          <div class="project-item">
+          <div class="project-item load-hidden">
             <div class="project-img-box">
               <a href="https://jullidu-smart-brain.herokuapp.com/?#" target="_blank"><img class="project-img"
-                  src="images/smart-brain-proj.gif" alt="smart-brain-proj"></a>
+                  src="images/smart-brain-liza.gif" alt="smart-brain-proj"></a>
             </div>
-            <div class="project-desc">
-
+            <div class="project-desc load-hidden">
               <p class="project-item-desc">Приложение, распознающее лицо по ссылке на изображение:<br>
                 - можно зарегистрироваться и заходить под сохраненным логином и паролем;<br>
                 - есть счетчик количества ссылок, введенных пользователем.
@@ -57,20 +57,17 @@
                 <a href="https://github.com/jullidu/smart-brains" target="_blank" class="open-github">Source Code
                   (frontend)</a>
                 <a href="https://github.com/jullidu/smart-brain-api" target="_blank" class="open-github">Source Code
-
                   (backend)</a>
               </div>
-
             </div>
-
           </div>
-          <div class="project-item">
+          <div class="project-item load-hidden">
             <div class="project-img-box">
               <a href="https://bouncy-project.firebaseapp.com/" target="_blank">
                 <img class="project-img" src="images/bouncy-proj.png" alt="bouncy-proj-img">
               </a>
             </div>
-            <div class="project-desc">
+            <div class="project-desc load-hidden">
               <p class="project-item-desc">Одностраничный адаптивный сайт.</p>
               <p class="project-item-desc">Сверстан по методологии
                 БЭМ, с использованием Bootstrap, JavaScript, SCSS, семантических элементов.</p>
@@ -80,16 +77,14 @@
                 Live</a>
               <div class="link-source-code"><a href="https://github.com/jullidu/bouncy-template" target="_blank"
                   class="open-github">Source Code</a></div>
-
             </div>
-
           </div>
-          <div class="project-item">
+          <div class="project-item load-hidden">
             <div class="project-img-box">
               <a href="https://jullidu.github.io/taxi-cab-project/" target="_blank"><img class="project-img"
                   src="images/taxi-proj.png" alt="taxi-proj-img"></a>
             </div>
-            <div class="project-desc">
+            <div class="project-desc load-hidden">
               <p class="project-item-desc">Одностраничный адаптивный сайт.</p>
               <p class="project-item-desc">Сверстан на CSS Grid.</p>
             </div>
@@ -98,24 +93,22 @@
                 Live</a>
               <div class="link-source-code"><a href="https://github.com/jullidu/taxi-cab-project" target="_blank"
                   class="open-github">Sourse Code</a></div>
-
             </div>
-
           </div>
         </div>
       </section>
 
-
       <section class="about-me">
         <h2 class="section-title">Обо мне</h2>
-        <div class="about-box">
+        <div class="about-box load-hidden">
           <div class="about-img-box">
             <img class="about-img" src="images/about-me-img.png" alt="about-me-img">
           </div>
-          <div class="about-desc">
-            <p>Если вам нужен красивый и надежный сайт, помогу в осуществлении задуманного!</p>
-            <p>К работе подхожу ответственно, а главное - люблю то, что делаю&nbsp;&#9829;</p>
-            <p>Постоянно развиваюсь, совершенствую текущие навыки и изучаю новые технологии.</p>
+          <div class="about-desc load-hidden">
+            <p>Создаю красивые и надежные сайты.</p>
+            <p>Уделяю большое внимание мелочам.</p>
+            <p>Постоянно совершенствуюсь.</p>
+            <p>Люблю то, что делаю&nbsp;&#9829;</p>
             <a href="https://hh.ru/resume/a2bdb5dfff013894240039ed1f447062574361" target="_blank" class="open-live">
               Смотреть резюме</a>
           </div>
@@ -123,21 +116,21 @@
       </section>
 
       <div class="contacts">
-        <div class="contacts-angle">
+        <div class="contacts-angle load-hidden">
           <a href="#header" class="angle-link"><i class="fas fa-angle-up fa-2x"></i></a>
         </div>
         <div class="contact-box">
-          <div class="contact-item email">
+          <div class="contact-item email load-hidden">
             <a class="contact-link" href="mailto:jullidu@gmail.com">Написать мне на почту:<br>
               <i class="fas fa-envelope fa-2x contact-icon"></i>
             </a>
           </div>
-          <div class="contact-item telegram">
+          <div class="contact-item telegram load-hidden">
             <a class="contact-link" href="https://t.me/jullidu" target="_blank">Написать мне в Telegram:<br>
               <i class="fab fa-telegram-plane fa-2x contact-icon"></i>
             </a>
           </div>
-          <div class="contact-item github">
+          <div class="contact-item github load-hidden">
             <a class="contact-link" href="https://github.com/jullidu" target="_blank">Моя страница на GitHub:<br>
               <i class="fab fa-github fa-2x contact-icon"></i>
             </a>
@@ -151,9 +144,8 @@
       </footer>
     </main>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/scroll.js"></script>
   <script src="js/scroll-reveal.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>

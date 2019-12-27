@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -375,7 +379,7 @@ hr {
 
 /* media query for contacts section */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .github {
     background-color: #24292e;
   }

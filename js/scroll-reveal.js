@@ -40,7 +40,7 @@ ScrollReveal().reveal('.project-item', {
 });
 ScrollReveal().reveal('.project-desc', {
   ...defaultProps,
-  delay: 1000,
+  delay: 700,
   distance: '20px',
   origin: window.innerWidth > 768 ? 'right' : 'bottom'
 });
@@ -56,7 +56,7 @@ ScrollReveal().reveal('.about-img', {
 });
 ScrollReveal().reveal('.about-desc', {
   ...defaultProps,
-  delay: 1000,
+  delay: 900,
   distance: '15px',
   origin: window.innerWidth > 768 ? 'right' : 'bottom'
 });
@@ -77,10 +77,10 @@ ScrollReveal().reveal('.email', {
 
 ScrollReveal().reveal('.telegram', {
   ...defaultProps,
-  delay: 1000,
+  delay: 900,
 
 });
 ScrollReveal().reveal('.github', {
   ...defaultProps,
-  delay: 1500,
+  delay: 1300,
 })

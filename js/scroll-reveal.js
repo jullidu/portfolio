@@ -40,7 +40,7 @@ ScrollReveal().reveal('.project-item', {
 });
 ScrollReveal().reveal('.project-desc', {
   ...defaultProps,
-  delay: 900,
+  delay: 800,
   distance: '20px',
   origin: window.innerWidth > 768 ? 'right' : 'bottom'
 });

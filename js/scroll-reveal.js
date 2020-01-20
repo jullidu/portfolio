@@ -40,7 +40,7 @@ ScrollReveal().reveal('.project-item', {
 });
 ScrollReveal().reveal('.project-desc', {
   ...defaultProps,
-  delay: 700,
+  delay: 900,
   distance: '20px',
   origin: window.innerWidth > 768 ? 'right' : 'bottom'
 });
@@ -77,10 +77,10 @@ ScrollReveal().reveal('.email', {
 
 ScrollReveal().reveal('.telegram', {
   ...defaultProps,
-  delay: 900,
+  delay: 1000,
 
 });
 ScrollReveal().reveal('.github', {
   ...defaultProps,
-  delay: 1300,
+  delay: 1500,
 })
